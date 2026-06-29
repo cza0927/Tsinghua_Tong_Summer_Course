@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Build the student-facing site from the Markdown in ../content.
 
-Each TA edits their own Markdown file in `content/`; running this script regenerates a single,
-self-contained `site/index.html` (offline, no server needed) that renders every module as a tab.
+TAs edit the Markdown files in `content/`; running this script regenerates a single,
+self-contained `site/index.html` (offline, no server needed) that renders the course tabs.
 
 Usage:
-    python site/build.py            # from the repo root
-    python build.py                 # from inside site/
+    python3 site/build.py           # from the repo root
+    python3 build.py                # from inside site/
 """
 
 import json
@@ -16,12 +16,9 @@ from pathlib import Path
 
 # Ordered registry of tabs -> source Markdown. Add a row here to add a tab.
 DOCS = [
-    ("syllabus",   "📅 Syllabus",        "syllabus.md"),
-    ("foundations","00 · Foundations",   "00-foundations.md"),
-    ("nlp",        "01 · LLM & NLP",     "01-foundation-models-nlp.md"),
-    ("vision",     "02 · Vision",        "02-multimodal-vision.md"),
-    ("embodied",   "03 · Embodied AI",   "03-embodied-ai.md"),
-    ("agents",     "04 · Agents & MAS",  "04-agent-systems-mas.md"),
+    ("syllabus", "Syllabus", "syllabus.md"),
+    ("learning-list", "Learning List / Homework", "learning-list.md"),
+    ("paper-reading-list", "Paper Reading List", "paper-reading-list.md"),
 ]
 
 OWNER_RE = re.compile(r"\*\*Owner:\*\*\s*([^·\n]+)")

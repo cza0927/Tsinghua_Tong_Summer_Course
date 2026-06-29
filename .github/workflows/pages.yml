@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Build site from Markdown
-        run: python site/build.py
+        run: python3 site/build.py
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

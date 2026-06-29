@@ -3,102 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>通用人工智能系统平台I · Learning &amp; Reading List</title>
+<title>通用人工智能系统平台I · Course Resources</title>
 <style>
   :root{
-    --purple:#660874; --purple-light:#8a3a9c; --purple-bg:#f6eef9;
-    --ink:#1d1d22; --muted:#6b6b75; --line:#e7e2ec; --card:#ffffff; --bg:#faf8fc;
-    --max:980px; --radius:14px;
+    --ink:#202124;
+    --muted:#5f6368;
+    --line:#dadce0;
+    --soft:#f8f9fa;
+    --accent:#1a73e8;
+    --bg:#ffffff;
+    --max:1040px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--bg);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
-      "PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.6;}
-  a{color:var(--purple);text-decoration:none}
+      "PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.62;}
+  a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
 
-  /* Header */
-  header.hero{background:linear-gradient(135deg,var(--purple),var(--purple-light));
-    color:#fff;padding:38px 20px 30px;}
-  .hero-inner{max-width:var(--max);margin:0 auto}
-  .hero h1{margin:0 0 6px;font-size:1.9rem;letter-spacing:.3px}
-  .hero .subtitle{margin:0 0 16px;opacity:.92;font-size:1.05rem}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-  .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
-    padding:5px 12px;border-radius:999px;font-size:.85rem;white-space:nowrap}
-  .hero p.lede{max-width:760px;margin:16px 0 0;opacity:.95;font-size:.97rem}
+  header{border-bottom:1px solid var(--line);background:var(--soft)}
+  .header-inner{max-width:var(--max);margin:0 auto;padding:24px 20px 20px}
+  h1{margin:0 0 8px;font-size:1.8rem;font-weight:650;letter-spacing:0}
+  .subtitle{margin:0;color:var(--muted);font-size:1rem}
+  .meta{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:14px;color:var(--muted);font-size:.92rem}
 
-  /* Nav */
-  nav.tabs{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);
-    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
-  .tabs-inner{max-width:var(--max);margin:0 auto;display:flex;flex-wrap:wrap;
-    gap:4px;padding:8px 14px}
-  .tab{appearance:none;border:0;background:transparent;cursor:pointer;
-    font:inherit;color:var(--muted);padding:8px 13px;border-radius:9px;font-weight:600;
-    font-size:.92rem;transition:all .15s}
-  .tab:hover{background:var(--purple-bg);color:var(--purple)}
-  .tab.active{background:var(--purple);color:#fff}
+  nav.tabs{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+  .tabs-inner{max-width:var(--max);margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:0 20px}
+  .tab{appearance:none;border:0;border-bottom:3px solid transparent;background:transparent;
+    color:var(--muted);cursor:pointer;font:inherit;font-size:.95rem;font-weight:600;
+    padding:12px 14px 10px;white-space:nowrap}
+  .tab:hover{color:var(--ink);background:var(--soft)}
+  .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 
-  /* Main */
-  main{max-width:var(--max);margin:0 auto;padding:26px 20px 60px}
-  .panel{display:none;animation:fade .25s ease}
+  main{max-width:var(--max);margin:0 auto;padding:26px 20px 56px}
+  .panel{display:none}
   .panel.active{display:block}
-  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .owner{display:inline-block;color:var(--muted);font-size:.9rem;margin:0 0 12px}
 
-  .owner{display:inline-flex;align-items:center;gap:7px;background:var(--purple-bg);
-    color:var(--purple);border:1px solid #e3cfe9;font-weight:600;font-size:.85rem;
-    padding:5px 12px;border-radius:999px;margin:2px 0 6px}
-  .owner::before{content:"👤"}
-
-  /* Rendered markdown */
-  .md{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:8px 26px 22px;box-shadow:0 1px 3px rgba(20,10,30,.04)}
-  .md h1{font-size:1.55rem;border-bottom:2px solid var(--purple-bg);padding-bottom:.3em;
-    margin-top:.7em;color:var(--purple)}
-  .md h2{font-size:1.2rem;margin-top:1.6em;color:var(--ink);
-    border-left:4px solid var(--purple);padding-left:10px}
-  .md h3{font-size:1.02rem;margin-top:1.3em;color:var(--purple-light)}
-  .md blockquote{margin:1em 0;padding:.4em 1em;background:var(--purple-bg);
-    border-left:4px solid var(--purple-light);border-radius:0 8px 8px 0;color:#4a3a52}
+  .md{max-width:920px}
+  .md h1{font-size:1.65rem;margin:0 0 .75em;padding-bottom:.35em;border-bottom:1px solid var(--line)}
+  .md h2{font-size:1.28rem;margin:1.8em 0 .55em;padding-top:.15em}
+  .md h3{font-size:1.05rem;margin:1.25em 0 .35em}
+  .md p{margin:.65em 0}
+  .md blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--line);color:var(--muted)}
   .md blockquote p{margin:.3em 0}
-  .md code{background:#f0ecf4;padding:.12em .4em;border-radius:5px;font-size:.88em;
-    font-family:"SF Mono",Menlo,Consolas,monospace}
-  .md pre{background:#1d1626;color:#eee;padding:14px;border-radius:10px;overflow:auto}
-  .md pre code{background:transparent;color:inherit;padding:0}
-  .md table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92rem}
-  .md th,.md td{border:1px solid var(--line);padding:8px 11px;text-align:left;
-    vertical-align:top}
-  .md th{background:var(--purple-bg);color:var(--purple)}
-  .md tr:nth-child(even) td{background:#fbf9fd}
-  .md ul,.md ol{padding-left:1.4em}
-  .md li{margin:.25em 0}
-  .md hr{border:0;border-top:1px solid var(--line);margin:1.6em 0}
+  .md code{background:var(--soft);border:1px solid #eceff1;padding:.08em .32em;border-radius:4px;
+    font-size:.9em;font-family:"SF Mono",Menlo,Consolas,monospace}
+  .md pre{background:#f6f8fa;border:1px solid var(--line);padding:13px;overflow:auto}
+  .md pre code{background:transparent;border:0;padding:0}
+  .md table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.93rem}
+  .md th,.md td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  .md th{background:var(--soft);font-weight:650}
+  .md ul,.md ol{padding-left:1.35em}
+  .md li{margin:.22em 0}
+  .md hr{border:0;border-top:1px solid var(--line);margin:1.8em 0}
 
-  footer{max-width:var(--max);margin:0 auto;padding:22px 20px 40px;color:var(--muted);
-    font-size:.85rem;border-top:1px solid var(--line)}
+  footer{max-width:var(--max);margin:0 auto;padding:18px 20px 36px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.86rem}
 
   @media(max-width:640px){
-    .hero h1{font-size:1.5rem}
-    .md{padding:6px 16px 18px}
-    .tabs-inner{padding:6px 8px}
+    .header-inner{padding:20px 16px 16px}
+    h1{font-size:1.45rem}
+    main{padding:22px 16px 44px}
+    .tabs-inner{padding:0 12px}
+    .tab{padding:11px 10px 9px}
   }
 </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
+  <header>
+    <div class="header-inner">
       <h1>通用人工智能系统平台 I</h1>
-      <p class="subtitle">General Artificial Intelligence Systems Platform&nbsp;I &mdash; Learning &amp; Reading List</p>
-      <div class="chips">
-        <span class="chip">📅 2026-07-13 → 07-26 (2 weeks)</span>
-        <span class="chip">📍 通院 2201 大教室</span>
-        <span class="chip">🎓 清华通班 · 大一下</span>
-        <span class="chip">🧩 Lectures + Coding + Reports</span>
+      <p class="subtitle">General Artificial Intelligence Systems Platform I · Course Resources</p>
+      <div class="meta">
+        <span>2026-07-13 to 2026-07-26</span>
+        <span>通院 2201 大教室</span>
+        <span>清华通班 · 大一下</span>
+        <span>Lectures, homework, reading reports</span>
       </div>
-      <p class="lede">A foundation-model–era tour of modern AI: start from coding and deep-learning
-        foundations, then work through the four pillars of today's general AI systems &mdash;
-        language models, multimodal vision, embodied AI, and agent systems. Pick a tab to begin.</p>
     </div>
   </header>
 
@@ -106,15 +89,12 @@
   <main id="panels"></main>
 
   <footer>
-    <strong>通用人工智能系统平台 I</strong> · Course resource hub · Built from Markdown in
-    <code>content/</code>. <span id="buildstamp"></span><br>
-    Module owners: 00 Foundations (all) · 01 NLP &mdash; 林子雍 · 02 Vision &mdash; 巫莹莹 ·
-    03 Embodied AI &mdash; 李炯烨 + 巫莹莹 · 04 Agents/MAS &mdash; 陈子昂.
+    <strong>通用人工智能系统平台 I</strong> · Built from Markdown in <code>content/</code>.
+    <span id="buildstamp"></span>
   </footer>
 
   <script src="assets/marked.min.js"></script>
   <script>
-    // __DOCS__ is injected by build.py : [{id,label,owner,md}, ...]
     const DOCS = __DOCS__;
     const BUILD_TIME = "__BUILD_TIME__";
 
@@ -134,8 +114,7 @@
       const panel = document.createElement('section');
       panel.className = 'panel' + (i===0 ? ' active' : '');
       panel.id = doc.id;
-      const owner = doc.owner
-        ? `<div class="owner">Owner: ${doc.owner}</div>` : '';
+      const owner = doc.owner ? `<div class="owner">Owner: ${doc.owner}</div>` : '';
       panel.innerHTML = owner + '<div class="md">' + marked.parse(doc.md) + '</div>';
       panels.appendChild(panel);
     });
@@ -149,7 +128,6 @@
       if (history.replaceState) history.replaceState(null,'','#'+id);
     }
 
-    // open the tab named in the URL hash, if any
     if (location.hash){
       const id = location.hash.slice(1);
       if (DOCS.some(d => d.id===id)) select(id);

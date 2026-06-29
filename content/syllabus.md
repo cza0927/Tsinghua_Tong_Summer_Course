@@ -1,64 +1,55 @@
-# Syllabus (Tentative) · 通用人工智能系统平台I
+# Syllabus · 通用人工智能系统平台I
 
-> **Audience:** 清华通班 first-year (spring) students · **Dates:** 2026-07-13 → 2026-07-26 (two weeks)
-> **Venue:** 通院 2201 大教室 · **Format:** Lectures + Programming Exercises + Practical Reports
+> **Owner:** All TAs · **Dates:** 2026-07-13 to 2026-07-26 · **Venue:** 通院 2201 大教室
 
-This course gives a hands-on, foundation-model–era tour of modern AI. We start from coding and
-deep-learning foundations, then move through the four pillars of today's general AI systems:
-**language models, multimodal vision, embodied AI, and agent systems**. Each module pairs a
-*Learning Path* (what to study) with *Programming Exercises* (what to build) and a *Paper Reading*
-list (what to read). Future updates and announcements will be posted in this repository and on
-Web Learning — feel free to open an issue with questions.
+This site has three modules: the syllabus, the learning list / homework list, and the paper reading
+list. The latter two follow the archive convention of separate files and are intended for TA updates
+through Git commits.
 
-## At a glance
+## Course Structure
 
-| Days | Module | Owner |
+| Days | Topic | Owner |
 |---|---|---|
-| Day 1–2 | 00 · Foundations & Coding | All TAs |
-| Day 3–5 | 01 · Foundation Models & NLP | 林子雍 |
-| Day 6–8 | 02 · Multimodal & Vision | 巫莹莹 |
-| Day 9–11 | 03 · Embodied AI & Robotics | 李炯烨 + 巫莹莹 |
-| Day 12–13 | 04 · Agent Systems & Multi-Agent | 陈子昂 |
-| Day 14 | Project report + final presentation | All TAs |
+| Day 1-2 | Shared foundations: GitHub, Python environment, LaTeX, PyTorch basics | All TAs |
+| Day 3-5 | Foundation models and NLP | 林子雍 |
+| Day 6-8 | Multimodal and vision | 巫莹莹 |
+| Day 9-11 | Embodied AI and robotics | 李炯烨 + 巫莹莹 |
+| Day 12-13 | Agent systems and multi-agent learning | 陈子昂 |
+| Day 14 | Report submission and project presentation | All TAs |
 
-> Exact day boundaries are tentative; TAs will confirm the per-day breakdown before the course starts.
+## Daily Plan
 
-## Week 1
+### Week 1
 
-- **Day 1 — Setup & tooling.** Linux command line, Git/GitHub, Python virtual environments
-  (conda / `uv`), VS Code. *HW:* set up your environment and clone the course exercise repo.
-- **Day 2 — Document prep & DL refresher.** LaTeX/Overleaf, scientific writing & email etiquette;
-  deep-learning recap with PyTorch tensors and autograd. *HW:* prepare a one-page LaTeX CV.
-- **Day 3 — From tokens to Transformers.** Language modeling intuition, tokenization, attention,
-  the Transformer block. *HW:* read & run nanoGPT.
-- **Day 4 — Training & adapting LLMs.** Pretraining, scaling laws, instruction tuning, RLHF/DPO.
-  *HW:* LoRA fine-tune a small model.
-- **Day 5 — Using LLMs.** Prompting, chain-of-thought, retrieval-augmented generation (RAG),
-  evaluation. *HW:* build a small RAG question-answering pipeline.
+- **Day 1: GitHub and development workflow.** Repository setup, branches, pull requests, environment
+  management, VS Code / Jupyter.
+- **Day 2: LaTeX and deep-learning basics.** LaTeX CV task, PyTorch tensor/autograd recap, notebook
+  submission convention.
+- **Day 3: Language modeling basics.** Tokenization, embeddings, attention, decoder-only Transformer.
+- **Day 4: Training and adaptation.** Pretraining intuition, scaling laws, instruction tuning, LoRA.
+- **Day 5: Using LLMs.** Prompting, retrieval-augmented generation, tool use, evaluation.
 
-## Week 2
+### Week 2
 
-- **Day 6 — Vision foundations.** Image classification, CNNs → Vision Transformers. *HW:* train an
-  image classifier.
-- **Day 7 — Representation & generation.** Self-supervised learning (CLIP, DINOv2), diffusion models.
-  *HW:* zero-shot classification with CLIP; sample from a diffusion model.
-- **Day 8 — Multimodal & 3D.** Vision-language models, segmentation (SAM 2), NeRF / 3D Gaussian
-  Splatting. *HW:* run a VLM and SAM 2 on your own images.
-- **Day 9 — Robot fundamentals.** Rigid bodies, degrees of freedom, configuration space, URDF.
-  *HW:* model a robot in URDF and visualize it.
-- **Day 10 — Simulation & control.** MuJoCo / Isaac Lab / Genesis, reinforcement learning for control.
-  *HW:* train a control policy in a simulator.
-- **Day 11 — Robot learning.** Imitation learning, diffusion policy, vision-language-action (VLA)
-  models. *HW:* run a diffusion-policy or VLA demo.
-- **Day 12 — Single- & multi-agent RL.** MARL, game theory, cooperation. *HW:* a PettingZoo
-  multi-agent environment.
-- **Day 13 — LLM agents.** ReAct, tool use, planning, multi-agent collaboration & theory of mind.
-  *HW:* build a tool-using ReAct agent.
-- **Day 14 — Capstone.** Submit your practical report (LaTeX) and present your project.
+- **Day 6: Vision foundations.** Image classification, CNNs, ResNet, Vision Transformer.
+- **Day 7: Representation and generation.** CLIP / DINO-style representation learning, diffusion.
+- **Day 8: Multimodal systems.** VLMs, segmentation, 3D / video topics.
+- **Day 9: Robotics foundations.** Degrees of freedom, configuration space, URDF.
+- **Day 10: Simulation and control.** MuJoCo / PyBullet / Isaac-style simulation, PPO basics.
+- **Day 11: Robot learning.** Imitation learning, diffusion policy, VLA models.
+- **Day 12: Multi-agent learning.** MARL environments, cooperation and competition, PettingZoo.
+- **Day 13: LLM agents.** ReAct, tool use, planning, multi-agent LLM collaboration.
+- **Day 14: Final session.** Reading report / practical report submission and short presentation.
 
 ## Deliverables
 
-1. **Programming exercises** — one per module (submitted to the course repo).
-2. **Practical reports** — written in LaTeX/English; at least one paper-summary report and one
-   project report (focus on method + your own analysis/improvement).
-3. **Final presentation** — a short talk on your capstone project on Day 14.
+1. **Foundational tasks:** GitHub workflow, environment check notebook, and LaTeX CV.
+2. **Programming homework:** at least one direction-specific assignment from the learning list.
+3. **Reading report:** a 2-4 page LaTeX report based on the paper reading list.
+4. **Presentation:** a short final presentation on a selected homework, reproduction, or extension.
+
+## TA Update Rule
+
+- Edit `content/learning-list.md` for learning resources, homework, notebooks, and starter repos.
+- Edit `content/paper-reading-list.md` for required/optional papers and reading-report topics.
+- Keep direction-specific edits inside the TA editing area for that direction.
