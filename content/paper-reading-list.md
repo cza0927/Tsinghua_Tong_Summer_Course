@@ -92,8 +92,7 @@ This route studies how language models access external knowledge, expose or samp
 
 ## Direction B · Multimodal and Vision
 
-> **巫莹莹请修改补充这里：** finalize vision/multimodal required papers, datasets, and suggested
-> reproduction experiments.
+This direction traces visual representation and generation: from convolutional and Transformer backbones to self-supervised features, from likelihood- and score-based generative models to flow matching, and on to vision-language models, promptable segmentation, and 3D / neural scene representation. Within each subsection, papers are ordered by conceptual dependency rather than by publication date alone.
 
 ### Required
 
@@ -102,14 +101,16 @@ This route studies how language models access external knowledge, expose or samp
 - He et al., 2022, [**Masked Autoencoders Are Scalable Vision Learners**](https://arxiv.org/abs/2111.06377).
 - Ho et al., 2020, [**Denoising Diffusion Probabilistic Models**](https://arxiv.org/abs/2006.11239).
 - Rombach et al., 2022, [**High-Resolution Image Synthesis with Latent Diffusion Models**](https://arxiv.org/abs/2112.10752).
-- Kirillov et al., 2023, [**Segment Anything**](https://arxiv.org/abs/2304.02643).
-- Liu et al., 2023, [**Visual Instruction Tuning**](https://arxiv.org/abs/2304.08485).
+- Kirillov et al., 2023, [**Segment Anything**](https://arxiv.org/abs/2304.02643) (SAM; see [**SAM 3**](https://arxiv.org/abs/2511.16719), 2025, for open-vocabulary concept prompts and [**SAM 3D**](https://arxiv.org/abs/2511.16624) for single-image 3D).
+- Liu et al., 2023, [**Visual Instruction Tuning**](https://arxiv.org/abs/2304.08485) (LLaVA, the canonical VLM recipe; see Qwen2.5-VL / InternVL3 for current systems).
 - Mildenhall et al., 2020, [**NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis**](https://arxiv.org/abs/2003.08934).
 
 ### Optional
 
 - Oquab et al., 2023, [**DINOv2: Learning Robust Visual Features without Supervision**](https://arxiv.org/abs/2304.07193).
+- Zhai et al., 2023, [**Sigmoid Loss for Language Image Pre-Training**](https://arxiv.org/abs/2303.15343) (SigLIP: the vision-language encoder behind many current VLMs).
 - Peebles and Xie, 2023, [**Scalable Diffusion Models with Transformers**](https://arxiv.org/abs/2212.09748).
+- Esser et al., 2024, [**Scaling Rectified Flow Transformers for High-Resolution Image Synthesis**](https://arxiv.org/abs/2403.03206) (Stable Diffusion 3: rectified flow / flow matching, the basis of today's open generators).
 - Kerbl et al., 2023, [**3D Gaussian Splatting for Real-Time Radiance Field Rendering**](https://arxiv.org/abs/2308.04079).
 - Su et al., 2020, [**A Stochastic Grammar of Images**](https://doi.org/10.1561/0600000030).
 
@@ -128,12 +129,16 @@ This route studies how language models access external knowledge, expose or samp
 - Zhao et al., 2023, [**Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware**](https://arxiv.org/abs/2304.13705).
 - Brohan et al., 2023, [**RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**](https://arxiv.org/abs/2307.15818).
 - Kim et al., 2024, [**OpenVLA: An Open-Source Vision-Language-Action Model**](https://arxiv.org/abs/2406.09246).
+- Luo et al., 2024, [**SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning**](https://arxiv.org/abs/2401.16013) (real-world, sample-efficient vision-based RL).
 
 ### Optional
 
 - Ahn et al., 2022, [**Do As I Can, Not As I Say**](https://arxiv.org/abs/2204.01691).
 - Hafner et al., 2023, [**Mastering Diverse Domains through World Models**](https://arxiv.org/abs/2301.04104).
+- Lei et al., 2025, [**RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning**](https://arxiv.org/abs/2510.14830) (real-world RL on diffusion visuomotor policies; near-100% success).
+- Kedia et al., 2026, [**SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation**](https://arxiv.org/abs/2602.16863) (sim-to-real RL for zero-shot dexterous tool use).
 - Black et al., 2024, [**pi0: A Vision-Language-Action Flow Model for General Robot Control**](https://arxiv.org/abs/2410.24164).
+- Physical Intelligence, 2025, [**π0.6: A VLA that Learns from Experience**](https://website.pi-asset.com/pi06star/PI06_model_card.pdf) (RL-improved successor to π0 / π0.5).
 
 ## Direction D · Agent Systems and Multi-Agent
 

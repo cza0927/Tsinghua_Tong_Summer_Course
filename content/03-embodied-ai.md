@@ -8,9 +8,9 @@
 Embodied AI is where perception, action, and the physical world meet — the crossover between this
 module's two owners' fields. We start from classical robot **kinematics** (how to describe and move
 a robot) and **simulation** (how to test policies safely and at scale), then move to **robot
-learning**: training control policies with reinforcement and imitation learning, and the new wave of
-**vision-language-action (VLA)** models that map camera images and language instructions directly to
-robot actions. The goal is to understand the full loop — model a robot, simulate it, and learn a
+learning**: training control policies with reinforcement and imitation learning — increasingly on
+real hardware and dexterous, multi-fingered hands — and the new wave of **vision-language-action
+(VLA)** models that map camera images and language instructions directly to robot actions. The goal is to understand the full loop — model a robot, simulate it, and learn a
 policy that acts in it.
 
 ## Learning Path
@@ -30,7 +30,8 @@ policy that acts in it.
 - **Simulation:** MuJoCo, Isaac Lab, PyBullet, Genesis — load a robot, step physics, render
 - **Control & RL:** Markov decision processes, PPO, reward design
 - **Imitation learning & diffusion policy:** learning from demonstrations
-- **Vision-Language-Action (VLA):** RT-2, OpenVLA, π0 — language + pixels → actions
+- **Vision-Language-Action (VLA):** RT-2, OpenVLA, π0 / π0.6 — language + pixels → actions
+- **Real-robot RL & dexterous manipulation:** sample-efficient on-hardware RL (SERL, RL-100), sim-to-real for multi-fingered hands (SimToolReal)
 - **Sim-to-real** and **world models** (learning a predictive model of the environment)
 
 ## Programming Exercises
@@ -57,12 +58,17 @@ policy that acts in it.
 4. **Chi et al. (2023), "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion."** Diffusion models for control.
 5. **Zhao et al. (2023), "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware (ACT / ALOHA)."** Imitation learning that actually works on real hardware.
 
+**Real-robot RL & dexterous manipulation**
+6. **Luo et al. (2024), "SERL: A Software Suite for Sample-Efficient Robotic RL."** Reinforcement learning trained directly and efficiently on real hardware.
+7. **Lei et al. (2025), "RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning."** Real-world RL on diffusion visuomotor policies, reaching near-100% success across diverse tasks.
+8. **Kedia et al. (2026), "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation."** Sim-to-real RL that transfers one dexterous tool-use policy zero-shot to real robots.
+
 **Foundation models for action**
-6. **Brohan et al. (2023), "RT-2: Vision-Language-Action Models."** Web knowledge transferred to robot control.
-7. **Kim et al. (2024), "OpenVLA: An Open-Source Vision-Language-Action Model."** An open, reproducible VLA.
-8. **Black et al. (2024), "π0: A Vision-Language-Action Flow Model for General Robot Control."** A recent generalist policy.
-9. **Ahn et al. (2022), "Do As I Can, Not As I Say (SayCan)."** Grounding LLM plans in robot affordances.
-10. **Hafner et al. (2023), "Mastering Diverse Domains through World Models (DreamerV3)."** Model-based RL / world models.
+9. **Brohan et al. (2023), "RT-2: Vision-Language-Action Models."** Web knowledge transferred to robot control.
+10. **Kim et al. (2024), "OpenVLA: An Open-Source Vision-Language-Action Model."** An open, reproducible VLA.
+11. **Black et al. (2024), "π0: A Vision-Language-Action Flow Model for General Robot Control."** A recent generalist policy *(see also π0.6, 2025, which improves it with RL from real-world experience).*
+12. **Ahn et al. (2022), "Do As I Can, Not As I Say (SayCan)."** Grounding LLM plans in robot affordances.
+13. **Hafner et al. (2023), "Mastering Diverse Domains through World Models (DreamerV3)."** Model-based RL / world models.
 
 > Conferences to follow: **CoRL, RSS, ICRA, IROS**, plus **NeurIPS / ICLR / ICML** for learning methods.
 
