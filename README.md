@@ -21,15 +21,6 @@ student-facing files.
 | Learning List / Homework | [`content/learning-list.md`](content/learning-list.md) | courses, tutorials, homework links, notebooks |
 | Paper Reading List | [`content/paper-reading-list.md`](content/paper-reading-list.md) | required and optional papers for reading reports |
 
-The four direction owners should edit their reserved areas in the two list files:
-
-| Direction | Owner |
-|---|---|
-| Foundation models and NLP | 林子雍 |
-| Multimodal and vision | 巫莹莹 |
-| Embodied AI and robotics | 李炯烨 + 巫莹莹 |
-| Agent systems and multi-agent learning | 陈子昂 |
-
 Older per-direction Markdown files may remain in `content/` for reference, but they are no longer
 rendered as website tabs.
 

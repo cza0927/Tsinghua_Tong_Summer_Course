@@ -1,22 +1,17 @@
 # Learning List / Homework · 通用人工智能系统平台I
 
-> **Owner:** All TAs · **Source format:** adapted from `archive/LearningList_BIGAI_2023.pdf`
-
 This page is the student-facing learning and homework list. The homework items marked **Archive
 homework** are carried over from the previous BIGAI learning-list PDF, then lightly adapted to the
 current course.
 
 ## Submission Convention
 
-- Homework is submitted through the course GitHub organization/repository unless a TA states otherwise.
+- Homework is submitted through the course GitHub organization/repository unless otherwise announced.
 - Each student should keep one personal working repository and one submitted pull request per assigned task.
 - Reports should be written in LaTeX and committed together with source code when relevant.
 - For external university assignments, follow the spirit of the task and cite the original course page; do not submit copied solutions.
 
 ## Day 1-2 · Shared Foundations
-
-> **All TAs please update here:** add the final course GitHub organization/repository, submission branch
-> naming rule, and the LaTeX CV template if we use a unified template.
 
 ### Learning Resources
 
@@ -42,9 +37,6 @@ current course.
    potential supervisor using appropriate academic email etiquette.
 
 ## Direction A · Foundation Models and NLP
-
-> **林子雍请修改补充这里：** finalize required lectures/readings, exact notebook or repository link,
-> expected model size, compute budget, and grading rubric.
 
 ### Learning Resources
 
@@ -79,9 +71,6 @@ current course.
 
 ## Direction B · Multimodal and Vision
 
-> **巫莹莹请修改补充这里：** choose which CS131/CS231n parts to reuse, add the starter notebook,
-> dataset, expected figures, and grading rubric.
-
 ### Learning Resources
 
 - Archive course path: [Stanford CS131](https://cs131.stanford.edu/) and
@@ -95,7 +84,7 @@ current course.
 ### Homework
 
 1. **Archive homework: CS131 HW1.** Complete CS131 HW1 on your own, with modifications to be
-   announced by the TA. Reference: [StanfordVL CS131 released assignments](https://github.com/stanfordvl/cs131_release).
+   announced by the course staff. Reference: [StanfordVL CS131 released assignments](https://github.com/stanfordvl/cs131_release).
 2. **Reference assignment: CS231n notebooks.** Use CS231n-style Colab notebooks for image
    classification, vectorized NumPy, kNN/SVM/Softmax classifiers, and a two-layer network.
 3. **Course version.** Train a small classifier on CIFAR-10, then fine-tune a pretrained ViT or
@@ -104,9 +93,6 @@ current course.
    cases.
 
 ## Direction C · Embodied AI and Robotics
-
-> **李炯烨、巫莹莹请修改补充这里：** confirm simulator choice, installation notes, URDF starter files,
-> robot model, and the CPU-only fallback assignment.
 
 ### Learning Resources
 
@@ -128,9 +114,6 @@ current course.
 4. **Optional extension.** Train PPO on `CartPole` or a small MuJoCo task and plot the learning curve.
 
 ## Direction D · Agent Systems and Multi-Agent
-
-> **陈子昂请修改补充这里：** choose PettingZoo environments, decide whether the main task is MARL,
-> LLM-agent, or both, and add grading details.
 
 ### Learning Resources
 

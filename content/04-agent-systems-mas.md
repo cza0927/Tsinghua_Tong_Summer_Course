@@ -1,7 +1,5 @@
 # 04 · Agent Systems & Multi-Agent
 
-> **Owner:** 陈子昂 (Ziang Chen) · **Days:** 12–13 · **Old mapping:** Multi-Agent Systems
-
 ## Overview
 
 An **agent** is a system that perceives, decides, and acts to achieve goals; a **multi-agent system

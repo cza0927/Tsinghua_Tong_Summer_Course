@@ -1,22 +1,17 @@
 # Paper Reading List · 通用人工智能系统平台I
 
-> **Owner:** All TAs · **Source format:** adapted from `archive/PaperReadingList_BIGAI_2025.pdf`
-
 Every listed paper has a direct link. Prefer the **Required** papers for reading reports; use
-**Optional** papers after TA approval.
+**Optional** papers when approved for the course.
 
 ## Reading Report Format
 
-- Choose one required paper or one TA-approved optional paper.
+- Choose one required paper or one course-approved optional paper.
 - Write a 2-4 page LaTeX report in English or Chinese.
 - Include: problem background, main method, experiment design, limitations, and one possible
   improvement or follow-up experiment.
 - Submit the `.tex`, compiled PDF, and any reproduction code through the course repository.
 
 ## Shared Foundations
-
-> **All TAs please update here:** mark the final subset that every student must read before choosing
-> a direction-specific report topic.
 
 ### Required
 
@@ -116,9 +111,6 @@ This direction traces visual representation and generation: from convolutional a
 
 ## Direction C · Embodied AI and Robotics
 
-> **李炯烨、巫莹莹请修改补充这里：** finalize robotics required papers, simulator task, and
-> reproduction expectations.
-
 ### Required
 
 - Todorov, Erez, and Tassa, 2012, [**MuJoCo: A physics engine for model-based control**](https://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf).
@@ -141,9 +133,6 @@ This direction traces visual representation and generation: from convolutional a
 - Physical Intelligence, 2025, [**π0.6: A VLA that Learns from Experience**](https://website.pi-asset.com/pi06star/PI06_model_card.pdf) (RL-improved successor to π0 / π0.5).
 
 ## Direction D · Agent Systems and Multi-Agent
-
-> **陈子昂请修改补充这里：** finalize MARL/LLM-agent required papers, choose report prompts, and
-> add reproduction tasks.
 
 ### Required
 

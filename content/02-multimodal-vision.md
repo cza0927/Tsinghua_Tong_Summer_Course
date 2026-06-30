@@ -1,7 +1,5 @@
 # 02 · Multimodal & Vision
 
-> **Owner:** 巫莹莹 (Yingying Wu) · **Days:** 6–8 · **Old mapping:** Computer Vision
-
 ## Overview
 
 Computer vision in 2026 is built on the same Transformer backbone as language, and increasingly

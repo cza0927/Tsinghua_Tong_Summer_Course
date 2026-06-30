@@ -1,12 +1,9 @@
 # 03 · Embodied AI & Robotics
 
-> **Owner:** 李炯烨 (Jiongye Li) + 巫莹莹 (Yingying Wu) · **Days:** 9–11 · **Old mapping:** Robotics
-> *(joint module — the CV × Robotics crossover)*
-
 ## Overview
 
 Embodied AI is where perception, action, and the physical world meet — the crossover between this
-module's two owners' fields. We start from classical robot **kinematics** (how to describe and move
+module's two fields. We start from classical robot **kinematics** (how to describe and move
 a robot) and **simulation** (how to test policies safely and at scale), then move to **robot
 learning**: training control policies with reinforcement and imitation learning — increasingly on
 real hardware and dexterous, multi-fingered hands — and the new wave of **vision-language-action

@@ -39,8 +39,6 @@
   main{max-width:var(--max);margin:0 auto;padding:26px 20px 56px}
   .panel{display:none}
   .panel.active{display:block}
-  .owner{display:inline-block;color:var(--muted);font-size:.9rem;margin:0 0 12px}
-
   .md{max-width:920px}
   .md h1{font-size:1.65rem;margin:0 0 .75em;padding-bottom:.35em;border-bottom:1px solid var(--line)}
   .md h2{font-size:1.28rem;margin:1.8em 0 .55em;padding-top:.15em}
@@ -89,7 +87,7 @@
   <main id="panels"></main>
 
   <footer>
-    <strong>通用人工智能系统平台 I</strong> · Built from Markdown in <code>content/</code>.
+    <strong>通用人工智能系统平台 I</strong>
     <span id="buildstamp"></span>
   </footer>
 
@@ -114,8 +112,7 @@
       const panel = document.createElement('section');
       panel.className = 'panel' + (i===0 ? ' active' : '');
       panel.id = doc.id;
-      const owner = doc.owner ? `<div class="owner">Owner: ${doc.owner}</div>` : '';
-      panel.innerHTML = owner + '<div class="md">' + marked.parse(doc.md) + '</div>';
+      panel.innerHTML = '<div class="md">' + marked.parse(doc.md) + '</div>';
       panels.appendChild(panel);
     });
 
@@ -133,7 +130,7 @@
       if (DOCS.some(d => d.id===id)) select(id);
     }
     document.getElementById('buildstamp').textContent =
-      BUILD_TIME ? 'Last built: ' + BUILD_TIME : '';
+      BUILD_TIME ? 'Last updated: ' + BUILD_TIME : '';
   </script>
 </body>
 </html>

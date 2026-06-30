@@ -1,7 +1,5 @@
 # 01 · Foundation Models & NLP
 
-> **Owner:** 林子雍 (Ziyong Lin) · **Days:** 3–5 · **Old mapping:** Natural Language Processing
-
 ## Overview
 
 Natural language processing has been reshaped into the study of **large language models (LLMs)** —

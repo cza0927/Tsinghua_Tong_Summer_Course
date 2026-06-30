@@ -6,7 +6,7 @@
 > **时间：** 2026年7月13日-7月26日（2周）  
 > **地点：** 通院2201大教室
 
-This syllabus combines the main morning lecture series with the afternoon TA-led practice sessions.
+This syllabus combines the main morning lecture series with the afternoon practice sessions.
 Morning sessions introduce the broad research landscape of general AI systems; afternoon sessions
 focus on tools, coding homework, paper reading, and practical reports.
 
@@ -15,12 +15,12 @@ focus on tools, coding homework, paper reading, and practical reports.
 | Time | Content |
 |---|---|
 | Morning | Invited / instructor lecture on one general-AI topic |
-| Afternoon | TA-led practice: GitHub, LaTeX, coding exercise, paper reading, report writing |
+| Afternoon | Practice: GitHub, LaTeX, coding exercise, paper reading, report writing |
 | Evening / after class | Homework, reading, repository submission, report revision |
 
 ## Daily Schedule
 
-| Date | Morning lecture | Afternoon TA / practice session |
+| Date | Morning lecture | Afternoon practice session |
 |---|---|---|
 | 7/13 Mon | **计算机视觉** · 陈以新 | Course setup: GitHub workflow, Python environment, Jupyter / Colab, repository submission rule |
 | 7/14 Tue | **社会智能和心智理论** · 范丽凤 | LaTeX and academic writing: CV task, report template, email etiquette, reading-report format |
@@ -53,9 +53,3 @@ focus on tools, coding homework, paper reading, and practical reports.
 2. **Programming homework:** at least one direction-specific assignment from the learning list.
 3. **Reading report:** a 2-4 page LaTeX report based on the paper reading list.
 4. **Practical report / presentation:** a short final presentation or written practical report on a selected homework, reproduction, or extension.
-
-## TA Update Rule
-
-- Edit `content/learning-list.md` for learning resources, homework, notebooks, and starter repos.
-- Edit `content/paper-reading-list.md` for required/optional papers and reading-report topics.
-- Keep direction-specific instructions under the corresponding direction heading.

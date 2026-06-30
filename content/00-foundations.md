@@ -1,7 +1,5 @@
 # 00 · Foundations & Coding
 
-> **Owner:** All TAs (shared) · **Days:** 1–2 · **Old mapping:** Coding/Doc Prep + ML basics
-
 ## Overview
 
 Before touching any frontier model, you need a working toolchain and a mental model of how neural
